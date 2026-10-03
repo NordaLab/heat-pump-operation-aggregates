@@ -1,0 +1,27 @@
+NOTICE - Residential heat-pump operation aggregates and generator audits (DPO-F11)
+
+This release is licensed under CC BY 4.0 (LICENSE.txt). It is ADAPTED material derived from the three sources
+below, each licensed under CC BY 4.0. No measured series of any source is redistributed.
+
+1. HEAPO - An Open Dataset for Heat Pump Optimization with Smart Electricity Meter Data and On-Site Inspection
+   Protocols. Custodians: ETH Zurich (Chair of Information Management) with EKZ (Elektrizitaetswerke des Kantons
+   Zuerich) and the University of Bamberg. Zenodo, https://doi.org/10.5281/zenodo.15056919, licence CC BY 4.0.
+2. WPuQ - heat pump and household electricity data of 38 single-family houses in Lower Saxony, 2018-2020.
+   Custodian: Institute for Solar Energy Research Hamelin (ISFH). Zenodo, https://doi.org/10.5281/zenodo.5642902,
+   licence CC BY 4.0.
+3. heatpumpmonitor.org open heat-pump performance data. Custodian: the OpenEnergyMonitor community initiative and
+   the heatpumpmonitor.org contributors who publish their systems. https://heatpumpmonitor.org, data licensed
+   under CC BY 4.0 (statement at https://heatpumpmonitor.org/about); dated snapshot of 2026-09-28.
+
+Modifications (indication of changes, CC BY 4.0 section 3(a)(1)(B)):
+- the sources were harmonised to one hourly schema (heat-pump electrical input, heat output where metered,
+  outdoor, flow and return temperature), with new random household identifiers;
+- location, coordinates, installer, floor area and property age were dropped at ingest;
+- a conditional diffusion model was trained on the three sources to generate synthetic days; no generated day is
+  in this release, because its memorisation audit failed (audit/, DATA_PROTECTION.md);
+- data/aggregates_*.csv hold statistics over at least 50 households (HEAPO and heatpumpmonitor.org only);
+- electrical input is expressed per household scale (see README.md); units and time are harmonised.
+The custodians did not take part in this work and do not endorse it.
+
+The simulation-pretrained baseline of the companion evaluation used RESCAST-100K
+(https://huggingface.co/datasets/Jainam03/RESCAST-100k, CC BY 4.0); none of its data is in this release.

@@ -1,0 +1,103 @@
+{
+ "rule": "dpkit.audit.memorisation_audit per custodian condition (and all channels for heatpumpmonitor); ship synthetic days only if every audit passes",
+ "audits": {
+  "CH_HEAPO__t_out_y": {
+   "dcr_ratio": 0.9712604777008684,
+   "real_split_baseline_p05": 0.9903149854189296,
+   "dcr_pass": false,
+   "dcr_strict_pass": false,
+   "mia_auc": 0.5149134248329528,
+   "mia_pass": true,
+   "audit_pass": false,
+   "n_train": 20000,
+   "n_holdout": 13610,
+   "n_synth": 20000,
+   "n_mia_each": 13610,
+   "cap": 20000,
+   "seed": 20260928,
+   "median_dcr_synth_train": 2.1470741033554077,
+   "median_dcr_holdout_train": 2.2106058597564697
+  },
+  "DE_WPuQ__t_out_y": {
+   "dcr_ratio": 0.943243150124647,
+   "real_split_baseline_p05": 0.9820189847223461,
+   "dcr_pass": false,
+   "dcr_strict_pass": false,
+   "mia_auc": 0.506807957173017,
+   "mia_pass": true,
+   "audit_pass": false,
+   "n_train": 20000,
+   "n_holdout": 5684,
+   "n_synth": 20000,
+   "n_mia_each": 5684,
+   "cap": 20000,
+   "seed": 20260928,
+   "median_dcr_synth_train": 1.5958955883979797,
+   "median_dcr_holdout_train": 1.6919238567352295
+  },
+  "UK_heatpumpmonitor__t_out_y": {
+   "dcr_ratio": 0.9262822701592838,
+   "real_split_baseline_p05": 0.9921363103384786,
+   "dcr_pass": false,
+   "dcr_strict_pass": false,
+   "mia_auc": 0.5307354125,
+   "mia_pass": true,
+   "audit_pass": false,
+   "n_train": 20000,
+   "n_holdout": 20000,
+   "n_synth": 20000,
+   "n_mia_each": 20000,
+   "cap": 20000,
+   "seed": 20260928,
+   "median_dcr_synth_train": 1.9371135830879211,
+   "median_dcr_holdout_train": 2.091277837753296
+  },
+  "UK_heatpumpmonitor__all_channels": {
+   "dcr_ratio": 0.9037837469629261,
+   "real_split_baseline_p05": 0.994111268440245,
+   "dcr_pass": false,
+   "dcr_strict_pass": false,
+   "mia_auc": 0.54048586125,
+   "mia_pass": true,
+   "audit_pass": false,
+   "n_train": 20000,
+   "n_holdout": 20000,
+   "n_synth": 19669,
+   "n_mia_each": 20000,
+   "cap": 20000,
+   "seed": 20260928,
+   "median_dcr_synth_train": 4.479218482971191,
+   "median_dcr_holdout_train": 4.95607328414917
+  }
+ },
+ "all_pass": false,
+ "generator": {
+  "train_seconds": 581.2449676990509,
+  "final_loss": 0.09592560678720474,
+  "peak_gpu_mib": 372.646484375,
+  "device": "cuda"
+ },
+ "values_clipped_to_train_range": {
+  "clipped": 20029,
+  "generated": 4299672
+ },
+ "generator_seed": 0,
+ "n_per_custodian": 20000,
+ "split": {
+  "CH_HEAPO": {
+   "households": 89,
+   "generator_train_households": 71,
+   "holdout_households": 18
+  },
+  "DE_WPuQ": {
+   "households": 37,
+   "generator_train_households": 30,
+   "holdout_households": 7
+  },
+  "UK_heatpumpmonitor": {
+   "households": 200,
+   "generator_train_households": 160,
+   "holdout_households": 40
+  }
+ }
+}

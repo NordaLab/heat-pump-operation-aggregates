@@ -1,0 +1,52 @@
+{
+ "claim_id": "OP-F11c",
+ "claim_text": "Synthetic cold-spell days generated from two custodians (heatpumpmonitor.org UK, WPuQ Germany) lower heat-pump peak-demand MAE in the coldest 5 percent of hours on the held-out third custodian (HEAPO households with a separate heat-pump meter) below BOTH real-only training and a simulation-pretrained transfer baseline of the RESCAST-100K kind.",
+ "decision": "REFUTED",
+ "reason": "real-only baseline not beaten (upper bound 0.02917 kW >= 0); simulation-pretrained transfer baseline not beaten (upper bound 0.01851 kW >= 0); memorisation audit fails for seed(s) [0, 1, 2, 3, 4]",
+ "n_heldout_households": 89,
+ "mean_mae_kw": {
+  "real_only": 1.2925697445021465,
+  "augmented": 1.3086897854758222,
+  "transfer": 1.302648714975109
+ },
+ "bootstrap_upper95_augmented_minus_real_only_kw": 0.029174969598438814,
+ "bootstrap_upper95_augmented_minus_transfer_kw": 0.018507980092721286,
+ "mean_diff_augmented_minus_real_only_kw": 0.016120040973675698,
+ "mean_diff_augmented_minus_transfer_kw": 0.006041070500713305,
+ "claim_generator_audit_pass_all_seeds": false,
+ "claim_generator_audit_per_seed": {
+  "0": {
+   "dcr_ratio": 0.9258622144686822,
+   "real_split_baseline_p05": 0.964158037649524,
+   "mia_auc": 0.5771444187242798,
+   "audit_pass": false
+  },
+  "1": {
+   "dcr_ratio": 0.9154258471623485,
+   "real_split_baseline_p05": 0.964158037649524,
+   "mia_auc": 0.5658704132373114,
+   "audit_pass": false
+  },
+  "2": {
+   "dcr_ratio": 0.9217633472224225,
+   "real_split_baseline_p05": 0.964158037649524,
+   "mia_auc": 0.5651363168724279,
+   "audit_pass": false
+  },
+  "3": {
+   "dcr_ratio": 0.9365934726086977,
+   "real_split_baseline_p05": 0.964158037649524,
+   "mia_auc": 0.5726273148148148,
+   "audit_pass": false
+  },
+  "4": {
+   "dcr_ratio": 0.9259668680344295,
+   "real_split_baseline_p05": 0.964158037649524,
+   "mia_auc": 0.5599011917009602,
+   "audit_pass": false
+  }
+ },
+ "spec_sha256": "d09ed877b1b9375e3d477fae9d444f3406249ec10b8da4e9c572ae6cbb9286ff",
+ "claim_record_sha256": "8b4121a7a04af6fd454beb3cbe101fe3d95e366c4947fdc948eaeb3163951791",
+ "note": "The claim is stated and argued in the companion paper; the release carries only these pooled numbers (aggregated over at least 50 held-out households)."
+}

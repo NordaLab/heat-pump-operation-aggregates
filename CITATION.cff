@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: If you use this dataset, please cite it as below.
+type: dataset
+title: "Residential heat-pump operation aggregates from 3 open sources with the audits of a synthetic generator (0 synthetic days released)"
+version: "1.0.1"
+date-released: "2026-10-03"
+authors:
+  - family-names: "Xu"
+    given-names: "Yueqiang"
+    affiliation: "University of Oulu"
+    orcid: "https://orcid.org/0000-0002-3528-423X"
+license: "CC-BY-4.0"
+repository: "https://github.com/NordaLab/heat-pump-operation-aggregates"
+url: "https://github.com/NordaLab/heat-pump-operation-aggregates"
+keywords:
+  - "heat pump"
+  - "residential energy"
+  - "electricity demand"
+  - "synthetic data"
+  - "memorisation audit"
+  - "privacy"
+  - "aggregated data"
+  - "HEAPO"
+  - "WPuQ"
+  - "heatpumpmonitor.org"
+abstract: "Version 1.0.1 (CHANGELOG.md). This release carries binned aggregates of hourly heat-pump electrical input (and, for heatpumpmonitor.org, heat output, COP and flow and return temperature) per 2 degC bin of the daily mean outdoor temperature and hour of day, each published cell over at least 50 households, from two open custodians: HEAPO (Switzerland, 89 households with a separate heat-pump meter) and heatpumpmonitor.org (UK, 200 systems). It also carries the memorisation and fidelity audits of a synthetic-day generator trained on these two custodians and WPuQ (Germany), the pooled held-out utility summary of the companion claim OP-F11c, and the code. It carries NO synthetic days: the generator failed its memorisation audit for every custodian condition, so no generated day is released (DATA_PROTECTION.md). Licence CC BY 4.0 (LICENSE.txt); attribution and changes in NOTICE.txt; safeguards and audit numbers in DATA_PROTECTION.md. Files: - `data/aggregates_hourly_by_tbin.csv`: per custodian, daily-mean-temperature bin (lower edge, 2 degC) and hour: number of households and hours, electrical input (mean, p10, p50, p90, kW), mean y; heatpumpmonitor also heat output, COP (ratio of sums), flow and return temperature, each with its own household count and published only where at least 50 households contribute that variable. Cells with fewer than 50 households or a household share above 20 percent are suppressed (section \"Temperature coverage and suppressed bins\")."

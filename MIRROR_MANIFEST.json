@@ -1,0 +1,165 @@
+{
+ "schema": "github_mirror_manifest",
+ "version": 1,
+ "repository": "NordaLab/heat-pump-operation-aggregates",
+ "release_version": "1.0.1",
+ "title": "Residential heat-pump operation aggregates from 3 open sources with the audits of a synthetic generator (0 synthetic days released)",
+ "licence_id": "cc-by-4.0",
+ "committed_files": [
+  {
+   "path": "audit/audit_fidelity.json",
+   "bytes": 4496,
+   "sha256": "def311d0ca0db950b35abe26b1d50876b8b69dec46b5fcc87d452b8b6349ca2e",
+   "release_manifest_sha256": "def311d0ca0db950b35abe26b1d50876b8b69dec46b5fcc87d452b8b6349ca2e"
+  },
+  {
+   "path": "audit/audit_memorisation.json",
+   "bytes": 2811,
+   "sha256": "4447b0dcab95414a3ce366ee449f1291ba799b508a727950d6b9d61d8597a211",
+   "release_manifest_sha256": "4447b0dcab95414a3ce366ee449f1291ba799b508a727950d6b9d61d8597a211"
+  },
+  {
+   "path": "audit/generator_card.json",
+   "bytes": 720,
+   "sha256": "262c4729ba1ffc0854229294ce963ee7f25aa63c5ac84dcd56eaa0bbf89059af",
+   "release_manifest_sha256": "262c4729ba1ffc0854229294ce963ee7f25aa63c5ac84dcd56eaa0bbf89059af"
+  },
+  {
+   "path": "audit/utility_OPF11c_summary.json",
+   "bytes": 2310,
+   "sha256": "45f51b20b9e6de68da94ebadd1972e9b5f4a7b6c91d83fd79cae2fa1a50e3962",
+   "release_manifest_sha256": "45f51b20b9e6de68da94ebadd1972e9b5f4a7b6c91d83fd79cae2fa1a50e3962"
+  },
+  {
+   "path": "data/aggregates_hourly_by_tbin.csv",
+   "bytes": 81819,
+   "sha256": "c41d44a6b162b8b7c2d7864d48311729f06121cf5766cdd40ee7b74de4c31c4c",
+   "release_manifest_sha256": "c41d44a6b162b8b7c2d7864d48311729f06121cf5766cdd40ee7b74de4c31c4c"
+  },
+  {
+   "path": "data/aggregates_household_scale.csv",
+   "bytes": 271,
+   "sha256": "8cc44d4731d2f857ae3d2dd0c6dfc9625a5f14b25e96eb010f46d3259417a87e",
+   "release_manifest_sha256": "8cc44d4731d2f857ae3d2dd0c6dfc9625a5f14b25e96eb010f46d3259417a87e"
+  },
+  {
+   "path": "LICENSE.txt",
+   "bytes": 18653,
+   "sha256": "e7eea99a8c46c4e79cf3efd97679fd1c673f5165c70c7360b0b856e31c9956f7",
+   "release_manifest_sha256": "e7eea99a8c46c4e79cf3efd97679fd1c673f5165c70c7360b0b856e31c9956f7"
+  },
+  {
+   "path": "NOTICE.txt",
+   "bytes": 2191,
+   "sha256": "3deac506336adb98d12c9dd24dd67c21746656bed7ed0c8b59a1bff604d0d2a1",
+   "release_manifest_sha256": "3deac506336adb98d12c9dd24dd67c21746656bed7ed0c8b59a1bff604d0d2a1"
+  },
+  {
+   "path": "proof/FACTS.json",
+   "bytes": 2090,
+   "sha256": "2eb34cae905582581db3021dee53a5e618cc2643db12aab06930b7693020e83f",
+   "release_manifest_sha256": "2eb34cae905582581db3021dee53a5e618cc2643db12aab06930b7693020e83f"
+  },
+  {
+   "path": "proof/MANIFEST.json",
+   "bytes": 3843,
+   "sha256": "9e42ba34c11adbd2fcc72591f7f1e3a6555148b9472de3cf06a2585b2a2be4e2",
+   "release_manifest_sha256": null
+  },
+  {
+   "path": "README.md",
+   "bytes": 9626,
+   "sha256": "e0c793e38f8ea8eb237cd3a83d0434d21f15a9cd6e6768e2496a84c72e472f90",
+   "release_manifest_sha256": "e0c793e38f8ea8eb237cd3a83d0434d21f15a9cd6e6768e2496a84c72e472f90",
+   "mirror_path": "docs/RELEASE_README.md"
+  }
+ ],
+ "release_assets": [],
+ "left_out": [
+  {
+   "path": "CHANGELOG.md",
+   "bytes": 3786,
+   "reason": "change history; the version is stated in README.md"
+  },
+  {
+   "path": "code/harmonise_sources.py",
+   "bytes": 8313,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "code/lab_build/c01_claim.py",
+   "bytes": 13063,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "code/lab_build/f11lib.py",
+   "bytes": 13114,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "code/lab_build/h01_harmonise_wpuq_hpm_rescast.py",
+   "bytes": 6899,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "code/lab_build/i01_ingest_heapo.py",
+   "bytes": 9071,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "code/lab_build/i02_fetch_wpuq.py",
+   "bytes": 4484,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "code/lab_build/i02b_wpuq_receipt_fix_and_datapackage.py",
+   "bytes": 2470,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "code/lab_build/i03_snapshot_hpm.py",
+   "bytes": 10042,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "code/lab_build/i04_rescast_subset.py",
+   "bytes": 7670,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "code/lab_build/r01_release_compute.py",
+   "bytes": 16313,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "code/lab_build/r02_package_release.py",
+   "bytes": 26018,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "code/lab_build/r03_reseal_1_0_1.py",
+   "bytes": 24884,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "code/lab_build/TASK_SPEC.json",
+   "bytes": 11628,
+   "reason": "code; in the archival release only"
+  },
+  {
+   "path": "DATA_PROTECTION.md",
+   "bytes": 4221,
+   "reason": "rewritten for the mirror in the authors' voice (DATA_PROTECTION.md here)"
+  },
+  {
+   "path": "proof/recompute_facts.py",
+   "bytes": 2959,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "verify_release.py",
+   "bytes": 3262,
+   "reason": "code or build log; in the archival release only"
+  }
+ ]
+}
